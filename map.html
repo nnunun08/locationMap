@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+    <section class="mapWrap">
+        <!-- 탭 -->
+        <div class="locationTab" id="nav-tab" role="tablist">
+          <button class="location active" id="tab1" data-bs-toggle="tab" data-bs-target="#nav1" type="button" role="tab" aria-controls="nav1" aria-selected="true">전국</button>
+          <button class="location " id="tab2" data-bs-toggle="tab" data-bs-target="#nav2" type="button" role="tab" aria-controls="nav2" aria-selected="false">서울</button>
+          <button class="location " id="tab3" data-bs-toggle="tab" data-bs-target="#nav3" type="button" role="tab" aria-controls="nav3" aria-selected="false">인천</button>
+          <button class="location " id="tab4" data-bs-toggle="tab" data-bs-target="#nav4" type="button" role="tab" aria-controls="nav4" aria-selected="false">경기</button>
+          <button class="location " id="tab5" data-bs-toggle="tab" data-bs-target="#nav5" type="button" role="tab" aria-controls="nav5" aria-selected="false">제주</button>
+          <button class="location " id="tab6" data-bs-toggle="tab" data-bs-target="#nav6" type="button" role="tab" aria-controls="nav6" aria-selected="false">부산</button>
+          <button class="location " id="tab7" data-bs-toggle="tab" data-bs-target="#nav7" type="button" role="tab" aria-controls="nav7" aria-selected="false">대구</button>
+          <button class="location " id="tab8" data-bs-toggle="tab" data-bs-target="#nav8" type="button" role="tab" aria-controls="nav8" aria-selected="false">광주</button>
+          <button class="location " id="tab9" data-bs-toggle="tab" data-bs-target="#nav9" type="button" role="tab" aria-controls="nav9" aria-selected="false">대전</button>
+          <button class="location " id="tab10" data-bs-toggle="tab" data-bs-target="#nav10" type="button" role="tab" aria-controls="nav10" aria-selected="false">울산</button>
+          <button class="location " id="tab11" data-bs-toggle="tab" data-bs-target="#nav11" type="button" role="tab" aria-controls="nav11" aria-selected="false">세종</button>
+          <button class="location " id="tab12" data-bs-toggle="tab" data-bs-target="#nav12" type="button" role="tab" aria-controls="nav12" aria-selected="false">강원</button>
+          <button class="location " id="tab13" data-bs-toggle="tab" data-bs-target="#nav13" type="button" role="tab" aria-controls="nav13" aria-selected="false">충북</button>
+          <button class="location " id="tab14" data-bs-toggle="tab" data-bs-target="#nav14" type="button" role="tab" aria-controls="nav14" aria-selected="false">충남</button>
+          <button class="location " id="tab15" data-bs-toggle="tab" data-bs-target="#nav15" type="button" role="tab" aria-controls="nav15" aria-selected="false">전북</button>
+          <button class="location " id="tab16" data-bs-toggle="tab" data-bs-target="#nav16" type="button" role="tab" aria-controls="nav16" aria-selected="false">전남</button>
+          <button class="location " id="tab17" data-bs-toggle="tab" data-bs-target="#nav17" type="button" role="tab" aria-controls="nav17" aria-selected="false">경북</button>
+          <button class="location " id="tab18" data-bs-toggle="tab" data-bs-target="#nav18" type="button" role="tab" aria-controls="nav18" aria-selected="false">경남</button>
+        </div>
+
+        <div class="infoTable">
+            <h3 class="locationName">경기</h3>
+            <table>
+                <tr>
+                    <th style="width: 100px;">인구</th>
+                    <td>3,123,123명</td>
+                </tr>
+                <tr>
+                    <th>기초단체</th>
+                    <td>성남시; 광주시</td>
+                </tr>
+                <tr>
+                    <th>국회의원 선거구</th>
+                    <td>성남갑; 성남을; 성남 분당갑; 성남 분당을; 광주갑; 광주을;</td>
+                </tr>
+            </table>
+        </div>
+        <!-- 탭 컨텐츠 -->
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav1" role="tabpanel" aria-labelledby="tab1" tabindex="0">전국
+                <div class="imgWrap">
+                    <img src="./img/KO.svg" usemap="#KO">
+                </div>
+
+                <map name="KO">
+                    
+                </map>
+            </div>
+            <div class="tab-pane fade" id="nav2" role="tabpanel" aria-labelledby="tab2" tabindex="0">서울</div>
+            <div class="tab-pane fade" id="nav3" role="tabpanel" aria-labelledby="tab3" tabindex="0">인천</div>
+            <div class="tab-pane fade" id="nav4" role="tabpanel" aria-labelledby="tab4" tabindex="0">경기
+                <div class="imgWrap">
+                    <img src="./img/KG0.svg" usemap="#KG">
+                    <div class="locationResource">
+                        <img src="./img/KG1.svg" usemap="#KG">
+                        <img src="./img/KG2.svg" usemap="#KG">
+                        <img src="./img/KG3.svg" usemap="#KG">
+                        <img src="./img/KG4.svg" usemap="#KG">
+                        <img src="./img/KG5.svg" usemap="#KG">
+                        <img src="./img/KG6.svg" usemap="#KG">
+                        <img src="./img/KG7.svg" usemap="#KG">
+                        <img src="./img/KG8.svg" usemap="#KG">
+                        <img src="./img/KG9.svg" usemap="#KG">
+                        <img src="./img/KG10.svg" usemap="#KG">
+                        <img src="./img/KG11.svg" usemap="#KG">
+                        <img src="./img/KG12.svg" usemap="#KG">
+                        <img src="./img/KG13.svg" usemap="#KG">
+                    </div>
+                </div>
+
+                <map name="KG">
+                    <area target="" alt="" title="" href="javascript:void(0)" onclick="alert('경기1')" coords="263,386,252,399,258,419,250,433,276,448,290,444,307,425,315,412,318,388,314,376,301,373,284,382" shape="poly">
+                    <area target="" alt="" title="" href="javascript:void(0)" onclick="alert('경기2')" coords="212,334,199,359,239,380,243,396,252,399,264,385,252,360,238,367,232,355,238,338" shape="poly">
+                    <area target="" alt="" title="" href="javascript:void(0)" onclick="alert('경기3')" coords="323,485,296,497,314,519,300,527,297,549,256,555,243,576,219,578,219,587,268,631,361,600,412,635,470,578,487,558,496,550,490,527,464,514,457,527,461,536,453,541,447,534,413,528,402,513,397,517,379,534,361,542,348,541,344,527,348,520,336,511,329,504" shape="poly">
+                    <area target="" alt="" title="" href="javascript:void(0)" onclick="alert('경기4')" coords="332,262,349,237,402,223,422,224,447,271,416,349,359,369,341,321" shape="poly">
+                    <area target="" alt="" title="" href="javascript:void(0)" onclick="alert('경기5')" coords="209,396,178,428,205,445,243,462,269,455,278,448,250,433,258,421,254,398,244,395,238,380,216,368,138,451,128,452,131,475,126,490,140,493,169,488,167,475,154,463,138,451,215,369" shape="poly">
+                    <area target="" alt="" title="" href="javascript:void(0)" onclick="alert('경기6')" coords="248,318,224,309,178,267,275,236,271,267,289,263,299,271,293,290" shape="poly">
+                    <area target="" alt="" title="" href="javascript:void(0)" onclick="alert('경기7')" coords="314,413,309,422,324,447,337,446,332,457,328,475,333,482,360,483,363,504,350,509,349,519,343,526,345,541,368,545,396,527,400,515,408,523,414,532,452,541,462,537,458,526,465,518,458,500,442,490,428,480,430,459,409,457,411,425,387,417,371,422,345,431,329,420" shape="poly">
+                    <area target="" alt="" title="" href="javascript:void(0)" onclick="alert('경기8')" coords="360,13,292,23,247,79,221,128,232,144,300,125,304,133,262,208,264,221,273,225,272,267,288,263,298,270,331,263,350,237,402,223,423,226,447,269,441,288,460,282,481,324,515,313,516,294,512,251,501,197,530,176,530,147,465,72,414,71,410,42,399,39,374,47" shape="poly">
+                    <area target="" alt="" title="" href="javascript:void(0)" onclick="alert('경기9')" coords="299,126,232,144,221,130,178,144,175,161,182,210,174,225,146,234,128,217,123,224,134,308,163,302,174,286,211,311,222,308,177,267,272,237,272,226,263,221,262,206,303,133" shape="poly">
+                    <area target="" alt="" title="" href="javascript:void(0)" onclick="alert('경기10')" coords="203,449,174,450,176,495,169,513,180,527,211,578,243,576,256,555,297,550,300,527,314,520,295,497,323,485,329,508,347,520,352,509,363,504,361,483,335,482,326,475,293,479,276,464,268,453,242,461,222,451" shape="poly">
+                    <area target="" alt="" title="" href="javascript:void(0)" onclick="alert('경기11')" coords="438,290,423,335,449,368,442,377,458,405,466,407,470,419,431,456,426,482,457,501,464,515,491,527,496,549,490,558,514,563,567,522,599,448,605,383,622,328,601,312,550,295,530,283,513,293,514,314,481,323,460,283" shape="poly">
+                    <area target="" alt="" title="" href="javascript:void(0)" onclick="alert('경기12')" coords="309,423,289,442,276,449,268,455,290,481,329,476,337,446,325,447" shape="poly">
+                    <area target="" alt="" title="" href="javascript:void(0)" onclick="alert('경기13')" coords="422,333,415,350,345,370,318,388,314,413,331,421,346,431,390,419,409,425,408,458,428,461,470,418,466,406,443,375,451,367" shape="poly">
+                </map>
+
+                <div class="hovertoast">
+                    <div class="item">
+                        <div class="locationName">경기1</div>
+                        <p class="desc">경기도군포시 / 안양시만안구 / 안양시동안구 / 경기도과천시 / 경기도의왕시</p>
+                    </div>
+                    <div class="item">
+                        <div class="locationName">경기2</div>
+                        <p class="desc">경기도군포시 / 안양시만안구 / 안양시동안구 / 경기도과천시 / 경기도의왕시</p>
+                    </div>
+                    <div class="item">
+                        <div class="locationName">경기3</div>
+                        <p class="desc">경기도군포시 / 안양시만안구 / 안양시동안구 / 경기도과천시 / 경기도의왕시</p>
+                    </div>
+                    <div class="item">
+                        <div class="locationName">경기4</div>
+                        <p class="desc">경기도군포시 / 안양시만안구 / 안양시동안구 / 경기도과천시 / 경기도의왕시</p>
+                    </div>
+                    <div class="item">
+                        <div class="locationName">경기5</div>
+                        <p class="desc">경기도군포시 / 안양시만안구 / 안양시동안구 / 경기도과천시 / 경기도의왕시</p>
+                    </div>
+                    <div class="item">
+                        <div class="locationName">경기6</div>
+                        <p class="desc">경기도군포시 / 안양시만안구 / 안양시동안구 / 경기도과천시 / 경기도의왕시</p>
+                    </div>
+                    <div class="item">
+                        <div class="locationName">경기7</div>
+                        <p class="desc">경기도군포시 / 안양시만안구 / 안양시동안구 / 경기도과천시 / 경기도의왕시</p>
+                    </div>
+                    <div class="item">
+                        <div class="locationName">경기8</div>
+                        <p class="desc">경기도군포시 / 안양시만안구 / 안양시동안구 / 경기도과천시 / 경기도의왕시</p>
+                    </div>
+                    <div class="item">
+                        <div class="locationName">경기9</div>
+                        <p class="desc">경기도군포시 / 안양시만안구 / 안양시동안구 / 경기도과천시 / 경기도의왕시</p>
+                    </div>
+                    <div class="item">
+                        <div class="locationName">경기10</div>
+                        <p class="desc">경기도군포시 / 안양시만안구 / 안양시동안구 / 경기도과천시 / 경기도의왕시</p>
+                    </div>
+                    <div class="item">
+                        <div class="locationName">경기11</div>
+                        <p class="desc">경기도군포시 / 안양시만안구 / 안양시동안구 / 경기도과천시 / 경기도의왕시</p>
+                    </div>
+                    <div class="item">
+                        <div class="locationName">경기12</div>
+                        <p class="desc">경기도군포시 / 안양시만안구 / 안양시동안구 / 경기도과천시 / 경기도의왕시</p>
+                    </div>
+                    <div class="item">
+                        <div class="locationName">경기13</div>
+                        <p class="desc">경기도군포시 / 안양시만안구 / 안양시동안구 / 경기도과천시 / 경기도의왕시</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav5" role="tabpanel" aria-labelledby="tab5" tabindex="0">제주</div>
+            <div class="tab-pane fade" id="nav6" role="tabpanel" aria-labelledby="tab6" tabindex="0">부산</div>
+            <div class="tab-pane fade" id="nav7" role="tabpanel" aria-labelledby="tab7" tabindex="0">대구</div>
+            <div class="tab-pane fade" id="nav8" role="tabpanel" aria-labelledby="tab8" tabindex="0">광주</div>
+            <div class="tab-pane fade" id="nav9" role="tabpanel" aria-labelledby="tab9" tabindex="0">대전</div>
+            <div class="tab-pane fade" id="nav10" role="tabpanel" aria-labelledby="tab10" tabindex="0">울산</div>
+            <div class="tab-pane fade" id="nav11" role="tabpanel" aria-labelledby="tab11" tabindex="0">세종</div>
+            <div class="tab-pane fade" id="nav12" role="tabpanel" aria-labelledby="tab12" tabindex="0">강원</div>
+            <div class="tab-pane fade" id="nav13" role="tabpanel" aria-labelledby="tab13" tabindex="0">충북</div>
+            <div class="tab-pane fade" id="nav14" role="tabpanel" aria-labelledby="tab14" tabindex="0">충남</div>
+            <div class="tab-pane fade" id="nav15" role="tabpanel" aria-labelledby="tab15" tabindex="0">전북</div>
+            <div class="tab-pane fade" id="nav16" role="tabpanel" aria-labelledby="tab16" tabindex="0">전남</div>
+            <div class="tab-pane fade" id="nav17" role="tabpanel" aria-labelledby="tab17" tabindex="0">경북</div>
+            <div class="tab-pane fade" id="nav18" role="tabpanel" aria-labelledby="tab18" tabindex="0">경남</div>
+
+        </div>
+
+
+        
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+</body>
+</html>

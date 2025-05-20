@@ -1,0 +1,274 @@
+@charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+Select {
+  font-family: inherit; /* 폰트 상속 */
+  background: url(../img/btn-drop-arrow.svg) no-repeat 98% 50%;
+  /* 네이티브 화살표를 커스텀 화살표로 대체 */
+  -webkit-appearance: none;
+  /* 네이티브 외형 감추기 */
+  -moz-appearance: none;
+  appearance: none;
+}
+
+Select::-ms-expand {
+  display: none; /* 화살표 없애기 for IE10, 11*/
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+/* IE10 이상에서 input box 에 추가된 지우기 버튼 제거 */
+input::-ms-clear {
+  display: none;
+}
+
+/* input type number 에서 화살표 제거 */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+
+html {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, HelveticaNeue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+}
+
+.mapWrap {
+  max-width: 1280px;
+  padding: 40px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.locationTab {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border: 0.5px solid #4D4D4D;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.locationTab .location {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  width: 11.1111111111%;
+  border: 0.5px solid #4D4D4D;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: #333;
+  font-family: "Pretendard GOV";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.locationTab .location.active {
+  background: #4D32E5;
+  color: #fff;
+}
+
+.infoTable {
+  z-index: 2;
+  position: absolute;
+  top: 140px;
+  left: 40px;
+  border-radius: 8px;
+  background: rgba(237, 235, 250, 0.75);
+  backdrop-filter: blur(15px);
+  display: flex;
+  width: 254px;
+  padding: 20px;
+  padding-bottom: 17px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 17px;
+}
+.infoTable .locationName {
+  color: #4D32E5;
+  font-family: "Pretendard GOV";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.4px;
+}
+.infoTable table {
+  width: 100%;
+}
+.infoTable table th {
+  color: #6251BE;
+  font-family: "Pretendard GOV";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.28px;
+  padding: 3px 0;
+}
+.infoTable table td {
+  color: #6251BE;
+  text-align: right;
+  font-family: "Pretendard GOV";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.28px;
+  padding: 3px 0;
+  padding-left: 10px;
+}
+
+.tab-content {
+  padding-top: 40px;
+  text-align: center;
+  outline: none;
+  box-shadow: none;
+}
+.tab-content .tab-pane {
+  outline: none;
+  box-shadow: none;
+}
+
+.hovertoast .item {
+  margin: 0 auto;
+  margin-top: 40px;
+  border-radius: 4px;
+  background: #222;
+  display: flex;
+  display: none;
+  width: 920px;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+  color: #FFF;
+}
+.hovertoast .locationName {
+  font-family: "Pretendard GOV";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.hovertoast .desc {
+  font-family: "Pretendard GOV";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.imgWrap {
+  position: relative;
+}
+.imgWrap .locationResource img {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tab-pane:has(area:nth-child(1):hover) .locationResource img:nth-child(1), .tab-pane:has(area:nth-child(1):hover) .hovertoast .item:nth-child(1) {
+  display: flex;
+}
+.tab-pane:has(area:nth-child(2):hover) .locationResource img:nth-child(2), .tab-pane:has(area:nth-child(2):hover) .hovertoast .item:nth-child(2) {
+  display: flex;
+}
+.tab-pane:has(area:nth-child(3):hover) .locationResource img:nth-child(3), .tab-pane:has(area:nth-child(3):hover) .hovertoast .item:nth-child(3) {
+  display: flex;
+}
+.tab-pane:has(area:nth-child(4):hover) .locationResource img:nth-child(4), .tab-pane:has(area:nth-child(4):hover) .hovertoast .item:nth-child(4) {
+  display: flex;
+}
+.tab-pane:has(area:nth-child(5):hover) .locationResource img:nth-child(5), .tab-pane:has(area:nth-child(5):hover) .hovertoast .item:nth-child(5) {
+  display: flex;
+}
+.tab-pane:has(area:nth-child(6):hover) .locationResource img:nth-child(6), .tab-pane:has(area:nth-child(6):hover) .hovertoast .item:nth-child(6) {
+  display: flex;
+}
+.tab-pane:has(area:nth-child(7):hover) .locationResource img:nth-child(7), .tab-pane:has(area:nth-child(7):hover) .hovertoast .item:nth-child(7) {
+  display: flex;
+}
+.tab-pane:has(area:nth-child(8):hover) .locationResource img:nth-child(8), .tab-pane:has(area:nth-child(8):hover) .hovertoast .item:nth-child(8) {
+  display: flex;
+}
+.tab-pane:has(area:nth-child(9):hover) .locationResource img:nth-child(9), .tab-pane:has(area:nth-child(9):hover) .hovertoast .item:nth-child(9) {
+  display: flex;
+}
+.tab-pane:has(area:nth-child(10):hover) .locationResource img:nth-child(10), .tab-pane:has(area:nth-child(10):hover) .hovertoast .item:nth-child(10) {
+  display: flex;
+}
+.tab-pane:has(area:nth-child(11):hover) .locationResource img:nth-child(11), .tab-pane:has(area:nth-child(11):hover) .hovertoast .item:nth-child(11) {
+  display: flex;
+}
+.tab-pane:has(area:nth-child(12):hover) .locationResource img:nth-child(12), .tab-pane:has(area:nth-child(12):hover) .hovertoast .item:nth-child(12) {
+  display: flex;
+}
+.tab-pane:has(area:nth-child(13):hover) .locationResource img:nth-child(13), .tab-pane:has(area:nth-child(13):hover) .hovertoast .item:nth-child(13) {
+  display: flex;
+}
+.tab-pane:has(area:nth-child(14):hover) .locationResource img:nth-child(14), .tab-pane:has(area:nth-child(14):hover) .hovertoast .item:nth-child(14) {
+  display: flex;
+}/*# sourceMappingURL=style.css.map */
