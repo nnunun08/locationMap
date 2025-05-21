@@ -85,7 +85,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 /*# sourceMappingURL=reset.css.map */
 
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-gov.min.css");
 
 html {
     font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, HelveticaNeue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
@@ -155,6 +155,7 @@ html {
     }
     table {
         width: 100%;
+        word-break: keep-all;
         th {
             color: #6251BE;
             font-family: "Pretendard GOV";
@@ -241,8 +242,7 @@ html {
 }
 
 .tab-pane {
-    &:has(area:nth-child(1):hover) {
-        .locationResource img:nth-child(1),.hovertoast .item:nth-child(1) {display: flex;}}
+    &:has(area:nth-child(1):hover) {.locationResource img:nth-child(1),.hovertoast .item:nth-child(1) {display: flex;}}
     &:has(area:nth-child(2):hover) {.locationResource img:nth-child(2),.hovertoast .item:nth-child(2) {display: flex;}}
     &:has(area:nth-child(3):hover) {.locationResource img:nth-child(3),.hovertoast .item:nth-child(3) {display: flex;}}
     &:has(area:nth-child(4):hover) {.locationResource img:nth-child(4),.hovertoast .item:nth-child(4) {display: flex;}}
