@@ -226,10 +226,10 @@ html {
 
 .imgWrap {
     position: relative;
-    // img {
-    //     width: 100%;
-    //     max-width: 720px;
-    // }
+    img {
+        width: 100%;
+        max-width: 720px;
+    }
     .locationResource {
         img {
             display: none;
@@ -256,4 +256,48 @@ html {
     &:has(area:nth-child(12):hover) {.locationResource img:nth-child(12),.hovertoast .item:nth-child(12) {display: flex;}}
     &:has(area:nth-child(13):hover) {.locationResource img:nth-child(13),.hovertoast .item:nth-child(13) {display: flex;}}
     &:has(area:nth-child(14):hover) {.locationResource img:nth-child(14),.hovertoast .item:nth-child(14) {display: flex;}}
+}
+
+
+@media screen and (max-width:760px) {
+  .mapWrap {
+    padding: 20px 0;
+  }
+
+  .locationTab {
+    .location {
+      width: calc(100% / 6);
+    }
+  }
+
+  .infoTable {
+    position: static;
+    width: 100%;
+  }
+
+  .hovertoast {
+      position: fixed;
+      bottom: 50px;
+      left: 10px;
+      right: 10px;
+      pointer-events: none;
+      .item {
+        width: 100%;
+        pointer-events: none;
+      }
+      .locationName {
+          font-family: "Pretendard GOV";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+      }
+      .desc {
+          font-family: "Pretendard GOV";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+      }
+  }
 }
