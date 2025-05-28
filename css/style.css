@@ -281,6 +281,10 @@ html {
   display: flex;
 }
 
+.tab-pane .hovertoast .item.hover {
+  display: flex;
+}
+
 @media screen and (max-width: 760px) {
   .mapWrap {
     padding: 20px 0;

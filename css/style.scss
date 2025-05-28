@@ -261,6 +261,12 @@ html {
     &:has(area:nth-child(14):hover) {.locationResource img:nth-child(14),.hovertoast .item:nth-child(14) {display: flex;}}
 }
 
+.tab-pane {
+  .hovertoast .item.hover {
+    display: flex;
+  }
+}
+
 
 @media screen and (max-width:760px) {
   .mapWrap {
