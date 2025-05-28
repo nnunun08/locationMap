@@ -278,6 +278,7 @@ html {
   display: flex;
 }
 
+.tab-pane .locationResource img.hover,
 .tab-pane .hovertoast .item.hover {
   display: flex;
 }
