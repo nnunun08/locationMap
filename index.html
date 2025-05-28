@@ -55,15 +55,34 @@
                 </tr>
             </table>
         </div>
+
         <!-- 탭 컨텐츠 -->
         <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav1" role="tabpanel" aria-labelledby="tab1" tabindex="0">
+
+                <button id="custab">이동</button>
                 <div class="imgWrap">
-                    <img src="./img/KO.svg">
+                    <img src="./img/KO.svg" usemap="#KO">
                 </div>
 
                 <map name="KO">
-                    
+                    <area target="" alt="tab2" title="서울" href="javascript:void(0)" onclick="activeLocation(this.alt)" coords="254,130,231,145,233,161,257,165,269,156,263,137" shape="poly">
+                    <area target="" alt="tab3" title="인천" href="javascript:void(0)" onclick="activeLocation(this.alt)" coords="215,137,229,145,215,194,157,197,166,118,191,111,207,125" shape="poly">
+                    <area target="" alt="tab11" title="세종" href="javascript:void(0)" onclick="activeLocation(this.alt)" coords="267,251,283,261,293,280,281,294,270,287,267,261" shape="poly">
+                    <area target="" alt="tab10" title="울산" href="javascript:void(0)" onclick="activeLocation(this.alt)" coords="471,382,459,393,458,404,480,425,494,431,508,401,506,385" shape="poly">
+                    <area target="" alt="tab6" title="부산" href="javascript:void(0)" onclick="activeLocation(this.alt)" coords="480,423,439,454,441,464,459,472,473,467,500,430" shape="poly">
+                    <area target="" alt="tab8" title="광주" href="javascript:void(0)" onclick="activeLocation(this.alt)" coords="245,439,225,439,212,456,230,466,248,466,257,450" shape="poly">
+                    <area target="" alt="tab9" title="대전" href="javascript:void(0)" onclick="activeLocation(this.alt)" coords="290,284,279,292,277,309,284,321,297,321,309,297,300,285" shape="poly">
+                    <area target="" alt="tab7" title="대구" href="javascript:void(0)" onclick="activeLocation(this.alt)" coords="398,305,451,321,424,383,395,397,394,362,421,341,401,317" shape="poly">
+                    <area target="" alt="tab4" title="경기도" href="javascript:void(0)" onclick="activeLocation(this.alt)" coords="317,101,306,117,312,138,338,150,329,193,280,235,236,234,211,186,200,123,260,56" shape="poly">
+                    <area target="" alt="tab12" title="강원도" href="javascript:void(0)" onclick="activeLocation(this.alt)" coords="390,7,247,57,323,205,507,216,502,190,400,17" shape="poly">
+                    <area target="" alt="tab17" title="경상북도" href="javascript:void(0)" onclick="activeLocation(this.alt)" coords="493,197,407,210,331,265,340,375,372,393,444,406,507,394,526,344,507,215" shape="poly">
+                    <area target="" alt="tab13" title="충청북도" href="javascript:void(0)" onclick="activeLocation(this.alt)" coords="328,194,384,191,419,210,395,243,359,254,344,280,344,309,357,318,346,342,316,344,296,313,280,259,279,227" shape="poly">
+                    <area target="" alt="tab14" title="충청남도" href="javascript:void(0)" onclick="activeLocation(this.alt)" coords="265,222,293,251,279,275,295,311,315,324,318,343,217,350,157,257,197,211,236,228" shape="poly">
+                    <area target="" alt="tab18" title="경상남도" href="javascript:void(0)" onclick="activeLocation(this.alt)" coords="343,359,376,385,395,398,436,399,464,393,484,424,421,515,379,526,338,510,327,469,309,437,314,375" shape="poly">
+                    <area target="" alt="tab15" title="전라북도" href="javascript:void(0)" onclick="activeLocation(this.alt)" coords="322,338,339,340,348,356,321,378,316,404,321,423,314,437,257,434,231,419,211,438,192,423,170,398,200,349,236,339,246,328,286,331,298,342" shape="poly">
+                    <area target="" alt="tab16" title="전라남도" href="javascript:void(0)" onclick="activeLocation(this.alt)" coords="228,414,255,414,261,431,291,431,304,428,325,454,337,471,337,545,246,583,204,586,156,554,133,508,156,458,193,417,212,430" shape="poly">
+                    <area target="" alt="tab5" title="제주도" href="javascript:void(0)" onclick="activeLocation(this.alt)" coords="209,612,266,595,289,600,282,628,209,644,194,626" shape="poly">
                 </map>
             </div>
             <div class="tab-pane fade" id="nav2" role="tabpanel" aria-labelledby="tab2" tabindex="0">
@@ -596,6 +615,13 @@
         $(document).ready(function(e) {
             $('img[usemap]').rwdImageMaps();
         });
+
+        function activeLocation(e) {
+            const tabEl = document.getElementById(e);
+            const custab = new bootstrap.Tab(tabEl);
+            custab.show();                          
+            $('img[usemap]').rwdImageMaps();
+        }
 
         const tab = document.querySelectorAll('.locationTab .location');
         tab.forEach(e => {
