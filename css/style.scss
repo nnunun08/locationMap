@@ -97,9 +97,6 @@ html {
     margin: 0 auto;
 
     position: relative;
-    &.mobile {
-      background-color: red;
-    }
 }
 
 .locationTab {
@@ -203,7 +200,7 @@ html {
         background: #222;
         display: flex;
         display: none;
-        width: 920px;
+        width: 100%;
         padding: 10px;
         flex-direction: column;
         justify-content: center;
