@@ -97,6 +97,9 @@ html {
     margin: 0 auto;
 
     position: relative;
+    &.mobile {
+      background-color: red;
+    }
 }
 
 .locationTab {
