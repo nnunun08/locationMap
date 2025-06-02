@@ -669,42 +669,73 @@
             })
         })
 
-        //@ return String (device name)
-        function check_device(){
-            var mobileKeyWords = new Array('iPhone', 'iPod', 'BlackBerry', 'Android', 'Windows CE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson');
-            var device_name = '';
-            for (var word in mobileKeyWords){
-                if (navigator.userAgent.match(mobileKeyWords[word]) != null){
-                    device_name = mobileKeyWords[word];
-                    break;
-                }
-            }
-            return device_name
-        }
-        function start() {
-            // device check
-            var device = check_device();
-            if(device !=''){
-                alert(device)
-                // const mapWrap = document.querySelector('.mapWrap')
-                // mapWrap.classList.add('device_mobile')
+        // //@ return String (device name)
+        // function check_device(){
+        //     var mobileKeyWords = new Array('iPhone', 'iPod', 'BlackBerry', 'Android', 'Windows CE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson');
+        //     var device_name = '';
+        //     for (var word in mobileKeyWords){
+        //         if (navigator.userAgent.match(mobileKeyWords[word]) != null){
+        //             device_name = mobileKeyWords[word];
+        //             break;
+        //         }
+        //     }
+        //     return device_name
+        // }
+        // function start() {
+        //     // device check
+        //     var device = check_device();
+        //     if(device !=''){
+        //         alert(device)
+        //         const mapWrap = document.querySelector('.mapWrap')
+        //         mapWrap.classList.add('device_mobile')
                 
-                // 모바일에서 지역 클릭시 지역 이미지 노출
-                function mapClick(e) {
-                    // let area = document.querySelectorAll('.active .locationMap area')
-                    let locationResource = document.querySelectorAll('.active .locationResource img')
-                    alert(e, 'click')
-                    let i = e - 1;
-                    locationResource.forEach(img => {
-                        img.classList.remove('hover')
-                    })
-                    locationResource[i].classList.add('hover')
-                    
+        //     }
+        // };
+        // start();
+
+        /**
+         * @returns {String} device name or empty string
+         */
+        function checkDevice() {
+            const mobileKeyWords = [
+                'iPhone', 'iPod', 'iPad', 'BlackBerry', 'Android', 
+                'Windows CE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson'
+            ];
+
+            const userAgent = navigator.userAgent;
+
+            for (let i = 0; i < mobileKeyWords.length; i++) {
+                if (userAgent.includes(mobileKeyWords[i])) {
+                    return mobileKeyWords[i];
                 }
             }
-        };
-        start();
+            return '';
+        }
 
+        function start() {
+            const device = checkDevice();
+            if (device !== '') {
+                alert(`Detected mobile device: ${device}`);
+                const mapWrap = document.querySelector('.mapWrap');
+                if (mapWrap) {
+                    mapWrap.classList.add('device_mobile');
+                }
+            }
+        }
+
+        start();
+        
+        // 모바일에서 지역 클릭시 지역 이미지 노출
+        function mapClick(e) {
+            // let area = document.querySelectorAll('.active .locationMap area')
+            let locationResource = document.querySelectorAll('.device_mobile .active .locationResource img')
+            alert(e, 'click')
+            let i = e - 1;
+            locationResource.forEach(img => {
+                img.classList.remove('hover')
+            })
+            locationResource[i].classList.add('hover')
+        }
 
         
         
