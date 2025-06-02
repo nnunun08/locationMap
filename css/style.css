@@ -96,9 +96,6 @@ html {
   margin: 0 auto;
   position: relative;
 }
-.mapWrap.device_mobile {
-  background-color: red;
-}
 
 .locationTab {
   display: flex;

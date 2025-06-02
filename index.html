@@ -715,7 +715,7 @@
         function start() {
             const device = checkDevice();
             if (device !== '') {
-                alert(`Detected mobile device: ${device}`);
+                // alert(`Detected mobile device: ${device}`);
                 const mapWrap = document.querySelector('.mapWrap');
                 if (mapWrap) {
                     mapWrap.classList.add('device_mobile');
@@ -729,7 +729,7 @@
         function mapClick(e) {
             // let area = document.querySelectorAll('.active .locationMap area')
             let locationResource = document.querySelectorAll('.device_mobile .active .locationResource img')
-            alert(e, 'click')
+            // alert(e, 'click')
             let i = e - 1;
             locationResource.forEach(img => {
                 img.classList.remove('hover')
