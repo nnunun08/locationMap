@@ -194,38 +194,40 @@ html {
         box-shadow: none;
     }
 }
-
 .hovertoast {
-    .item {
-        margin: 0 auto;
-        margin-top: 40px;
-        border-radius: 4px;
-        background: #222;
-        display: flex;
-        display: none;
-        width: 100%;
-        padding: 10px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 4px;
-        color: #FFF;
-    }
-    .locationName {
-        font-family: "Pretendard GOV";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-    .desc {
-        font-family: "Pretendard GOV";
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
+  display: none;
 }
+// .hovertoast {
+//     .item {
+//         margin: 0 auto;
+//         margin-top: 40px;
+//         border-radius: 4px;
+//         background: #222;
+//         display: flex;
+//         display: none;
+//         width: 100%;
+//         padding: 10px;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: flex-start;
+//         gap: 4px;
+//         color: #FFF;
+//     }
+//     .locationName {
+//         font-family: "Pretendard GOV";
+//         font-size: 16px;
+//         font-style: normal;
+//         font-weight: 700;
+//         line-height: normal;
+//     }
+//     .desc {
+//         font-family: "Pretendard GOV";
+//         font-size: 14px;
+//         font-style: normal;
+//         font-weight: 400;
+//         line-height: normal;
+//     }
+// }
 
 .imgWrap {
     position: relative;
@@ -245,21 +247,52 @@ html {
 }
 
 .tab-pane {
-    &:has(area:nth-child(1):hover) {.locationResource img:nth-child(1),.hovertoast .item:nth-child(1) {display: flex;}}
-    &:has(area:nth-child(2):hover) {.locationResource img:nth-child(2),.hovertoast .item:nth-child(2) {display: flex;}}
-    &:has(area:nth-child(3):hover) {.locationResource img:nth-child(3),.hovertoast .item:nth-child(3) {display: flex;}}
-    &:has(area:nth-child(4):hover) {.locationResource img:nth-child(4),.hovertoast .item:nth-child(4) {display: flex;}}
-    &:has(area:nth-child(5):hover) {.locationResource img:nth-child(5),.hovertoast .item:nth-child(5) {display: flex;}}
-    &:has(area:nth-child(6):hover) {.locationResource img:nth-child(6),.hovertoast .item:nth-child(6) {display: flex;}}
-    &:has(area:nth-child(7):hover) {.locationResource img:nth-child(7),.hovertoast .item:nth-child(7) {display: flex;}}
-    &:has(area:nth-child(8):hover) {.locationResource img:nth-child(8),.hovertoast .item:nth-child(8) {display: flex;}}
-    &:has(area:nth-child(9):hover) {.locationResource img:nth-child(9),.hovertoast .item:nth-child(9) {display: flex;}}
-    &:has(area:nth-child(10):hover) {.locationResource img:nth-child(10),.hovertoast .item:nth-child(10) {display: flex;}}
-    &:has(area:nth-child(11):hover) {.locationResource img:nth-child(11),.hovertoast .item:nth-child(11) {display: flex;}}
-    &:has(area:nth-child(12):hover) {.locationResource img:nth-child(12),.hovertoast .item:nth-child(12) {display: flex;}}
-    &:has(area:nth-child(13):hover) {.locationResource img:nth-child(13),.hovertoast .item:nth-child(13) {display: flex;}}
-    &:has(area:nth-child(14):hover) {.locationResource img:nth-child(14),.hovertoast .item:nth-child(14) {display: flex;}}
+    &:has(area:nth-child(1):hover) {.locationResource img:nth-child(1)
+      // .hovertoast .item:nth-child(1) 
+      {display: flex;}}
+    &:has(area:nth-child(2):hover) {.locationResource img:nth-child(2)
+      // .hovertoast .item:nth-child(2) 
+      {display: flex;}}
+    &:has(area:nth-child(3):hover) {.locationResource img:nth-child(3)
+      // .hovertoast .item:nth-child(3) 
+      {display: flex;}}
+    &:has(area:nth-child(4):hover) {.locationResource img:nth-child(4)
+      // .hovertoast .item:nth-child(4) 
+      {display: flex;}}
+    &:has(area:nth-child(5):hover) {.locationResource img:nth-child(5)
+      // .hovertoast .item:nth-child(5) 
+      {display: flex;}}
+    &:has(area:nth-child(6):hover) {.locationResource img:nth-child(6)
+      // .hovertoast .item:nth-child(6) 
+      {display: flex;}}
+    &:has(area:nth-child(7):hover) {.locationResource img:nth-child(7)
+      // .hovertoast .item:nth-child(7) 
+      {display: flex;}}
+    &:has(area:nth-child(8):hover) {.locationResource img:nth-child(8)
+      // .hovertoast .item:nth-child(8) 
+      {display: flex;}}
+    &:has(area:nth-child(9):hover) {.locationResource img:nth-child(9)
+      // .hovertoast .item:nth-child(9) 
+      {display: flex;}}
+    &:has(area:nth-child(10):hover) {.locationResource img:nth-child(10)
+      // .hovertoast .item:nth-child(10) 
+      {display: flex;}}
+    &:has(area:nth-child(11):hover) {.locationResource img:nth-child(11)
+      // .hovertoast .item:nth-child(11) 
+      {display: flex;}}
+    &:has(area:nth-child(12):hover) {.locationResource img:nth-child(12)
+      // .hovertoast .item:nth-child(12) 
+      {display: flex;}}
+    &:has(area:nth-child(13):hover) {.locationResource img:nth-child(13)
+      // .hovertoast .item:nth-child(13) 
+      {display: flex;}}
+    &:has(area:nth-child(14):hover) {.locationResource img:nth-child(14)
+      // .hovertoast .item:nth-child(14) 
+      {display: flex;}}
 }
+@media screen and (min-width:759px) {
+}
+
 
 .tab-pane {
   .locationResource img.hover,
