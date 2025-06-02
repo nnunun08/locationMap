@@ -646,10 +646,18 @@
             // })
         }
 
+        function reset() {
+            let locationResource = document.querySelectorAll('.device_mobile .active .locationResource img')
+            locationResource.forEach(img => {
+                img.classList.remove('hover')
+            })
+        }
+
         // 탭 클릭시 지도위치 새로고침
         tab.forEach(e => {
             e.addEventListener('click', ()=>{
                 $('img[usemap]').rwdImageMaps();
+                reset()
 
                 // let area = document.querySelectorAll('.active .locationMap area')
                 // let hovertoast = document.querySelectorAll('.active .hovertoast .item')
@@ -727,14 +735,19 @@
         
         // 모바일에서 지역 클릭시 지역 이미지 노출
         function mapClick(e) {
-            // let area = document.querySelectorAll('.active .locationMap area')
-            let locationResource = document.querySelectorAll('.device_mobile .active .locationResource img')
-            // alert(e, 'click')
+            // 클릭한 지역 활성화
             let i = e - 1;
-            locationResource.forEach(img => {
-                img.classList.remove('hover')
-            })
-            locationResource[i].classList.add('hover')
+            let locationResource = document.querySelectorAll('.device_mobile .active .locationResource img')
+            
+            if(locationResource[i].className === 'hover') {
+                // 초기화
+                reset()
+                return
+            } else {
+                // 초기화
+                reset()
+                locationResource[i].classList.add('hover')
+            }
         }
 
         
